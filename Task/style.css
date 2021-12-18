@@ -1,0 +1,128 @@
+/* Css Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body */
+body {
+  background-color: #f4f7f8;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Heading (Nav bar) */
+#heading {
+  width: 100vw;
+  background-color: darkorange;
+  height: 12vh;
+  color: #282936;
+  display: flex;
+  align-items: center;
+}
+#heading h1 {
+  margin-left: 0.7rem;
+}
+#heading a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Add Notes Button */
+#add {
+  background: darkorange;
+  border: none;
+  position: absolute;
+  top: 14%;
+  right: 2rem;
+  padding: 8px 13px;
+  border-radius: 12px;
+}
+#add:hover {
+  background: #21cc71;
+}
+
+/* Note */
+.note {
+  height: 200px;
+  overflow-y: scroll;
+  width: 400px;
+  margin: 30px 20px;
+  margin-top: 6rem;
+  background-color: #ffffff;
+}
+.note .operation {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+/* buttons */
+
+.edit,
+.delete {
+  margin-left: 0.5rem;
+  color: white;
+  background-color: #21cc71;
+  border: none;
+  border-radius: 50%;
+  padding: 9px;
+  cursor: pointer;
+}
+.delete {
+  background-color: #e74c3c;
+}
+
+/* Hover effect of buttons */
+.edit:hover {
+  color: #21cc71;
+  background-color: #fff;
+}
+.delete:hover {
+  color: #e74c3c;
+  background-color: #fff;
+}
+/* textarea */
+
+textarea {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.main {
+  padding: 20px;
+}
+/* utility class */
+.hidden {
+  display: none;
+}
+
+/* Media Query.. */
+@media screen and (max-width: 950px) and (min-width: 780px) {
+  .note {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .note {
+    width: 300px;
+  }
+  #add {
+    right: 1rem;
+    padding: 6px 9px;
+  }
+}
+/* footer */
+
+footer {
+  background-color: darkorange;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: fixed;
+  bottom: 0%;
+  height: 13vh;
+  flex-direction: column;
+  text-align: center;
+}
